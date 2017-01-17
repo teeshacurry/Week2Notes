@@ -15,7 +15,16 @@ namespace Day2
             Warrior gromm = new Warrior("Grommish");
             Warrior soap = new Warrior("Soap McTavish");
 
-            soap.Attack(gromm);
+            while (gromm.currentState == State.Alive)
+            {
+                soap.Attack(gromm);
+            }
+            Console.WriteLine(soap);
+            Console.WriteLine(gromm);
+        
+
+
+            /*
             Console.WriteLine(soap);
             Console.WriteLine(gromm);
             soap.Attack(gromm);
@@ -26,6 +35,7 @@ namespace Day2
             soap.Attack(gromm);
             Console.WriteLine(soap);
             Console.WriteLine(gromm);
+            */
 
             {
 
